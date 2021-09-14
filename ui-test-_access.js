@@ -3,6 +3,8 @@ const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 Object.entries({
 	ROCOGlossary: '.ROCOGlossary',
 
+	ROCOGlossaryHeading: '.ROCOGlossaryHeading',
+
 	ROCOGlossaryDoorlessLink: '.ROCOGlossaryDoorlessLink',
 	ROCOGlossaryDoorlessBlurb: '.ROCOGlossaryDoorlessBlurb',
 
@@ -22,6 +24,10 @@ describe('ROCOGlossary_Access', function () {
 		browser.assert.elements(ROCOGlossary, 1);
 	});
 
+	it('hides ROCOGlossaryHeading', function () {
+		browser.assert.elements(ROCOGlossaryHeading, 0);
+	});
+
 	it('shows ROCOGlossaryDoorlessLink', function () {
 		browser.assert.elements(ROCOGlossaryDoorlessLink, 1);
 	});
@@ -36,6 +42,20 @@ describe('ROCOGlossary_Access', function () {
 
 	it('shows ROCOGlossaryZeroDataBlurb', function () {
 		browser.assert.elements(ROCOGlossaryZeroDataBlurb, 1);
+	});
+
+	context('ROCOGlossaryHeadingEnabled', function () {
+		
+		before(function() {
+			return browser.OLSKVisit(kDefaultRoute, {
+				ROCOGlossaryHeadingEnabled: true,
+			});
+		});
+
+		it('shows ROCOGlossaryHeading', function () {
+			browser.assert.elements(ROCOGlossaryHeading, 1);
+		});
+	
 	});
 
 });

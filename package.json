@@ -1,4 +1,7 @@
 {
   "name": "ROCOGlossary",
-  "main": "main.ejs"
+  "main": "main.ejs",
+  "dependencies": {
+    "ROCOGlossary": "rationalcreative/ROCOGlossary"
+  }
 }

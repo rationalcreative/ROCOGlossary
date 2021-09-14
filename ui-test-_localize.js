@@ -11,7 +11,12 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		before(function() {
 			return browser.OLSKVisit(kDefaultRoute, {
 				OLSKRoutingLanguage,
+				ROCOGlossaryHeadingEnabled: true,
 			});
+		});
+
+		it('localizes ROCOGlossaryHeading', function () {
+			browser.assert.text(ROCOGlossaryHeading, uLocalized('ROCOGlossaryHeadingText'));
 		});
 
 		it('localizes ROCOGlossaryDoorlessLink', function () {
