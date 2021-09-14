@@ -14,6 +14,14 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			});
 		});
 
+		it('localizes ROCOGlossaryDoorlessLink', function () {
+			browser.assert.text(ROCOGlossaryDoorlessLink, uLocalized('ROCOGlossaryDoorlessLinkText'));
+		});
+
+		it('localizes ROCOGlossaryDoorlessBlurb', function() {
+			browser.assert.text(ROCOGlossaryDoorlessBlurb, uLocalized('ROCOGlossaryDoorlessBlurbText'));
+		});
+
 		it('localizes ROCOGlossaryZeroDataLink', function () {
 			browser.assert.text(ROCOGlossaryZeroDataLink, uLocalized('ROCOGlossaryZeroDataLinkText'));
 		});

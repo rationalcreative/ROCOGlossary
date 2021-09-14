@@ -3,6 +3,9 @@ const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 Object.entries({
 	ROCOGlossary: '.ROCOGlossary',
 
+	ROCOGlossaryDoorlessLink: '.ROCOGlossaryDoorlessLink',
+	ROCOGlossaryDoorlessBlurb: '.ROCOGlossaryDoorlessBlurb',
+
 	ROCOGlossaryZeroDataLink: '.ROCOGlossaryZeroDataLink',
 	ROCOGlossaryZeroDataBlurb: '.ROCOGlossaryZeroDataBlurb',
 }).map(function (e) {
@@ -17,6 +20,14 @@ describe('ROCOGlossary_Access', function () {
 
 	it('shows ROCOGlossary', function () {
 		browser.assert.elements(ROCOGlossary, 1);
+	});
+
+	it('shows ROCOGlossaryDoorlessLink', function () {
+		browser.assert.elements(ROCOGlossaryDoorlessLink, 1);
+	});
+
+	it('shows ROCOGlossaryDoorlessBlurb', function () {
+		browser.assert.elements(ROCOGlossaryDoorlessBlurb, 1);
 	});
 
 	it('shows ROCOGlossaryZeroDataLink', function () {

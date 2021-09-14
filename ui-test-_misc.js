@@ -6,6 +6,18 @@ describe('ROCOGlossary_Misc', function () {
 		return browser.OLSKVisit(kDefaultRoute);
 	});
 
+	describe('ROCOGlossaryDoorlessLink', function test_ROCOGlossaryDoorlessLink () {
+
+		it('sets href', function () {
+			browser.assert.attribute(ROCOGlossaryDoorlessLink, 'href', 'https://rosano.hmm.garden/01evv3hq1ak4b6ng1jzppx5n2j');
+		});
+
+		it('sets target', function () {
+			browser.assert.attribute(ROCOGlossaryDoorlessLink, 'target', 	'_blank');
+		});
+	
+	});
+
 	describe('ROCOGlossaryZeroDataLink', function test_ROCOGlossaryZeroDataLink () {
 
 		it('sets href', function () {
