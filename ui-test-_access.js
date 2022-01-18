@@ -11,7 +11,7 @@ Object.entries({
 	ROCOGlossaryZeroDataLink: '.ROCOGlossaryZeroDataLink',
 	ROCOGlossaryZeroDataBlurb: '.ROCOGlossaryZeroDataBlurb',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('ROCOGlossary_Access', function () {
