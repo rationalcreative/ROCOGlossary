@@ -35,6 +35,14 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			browser.assert.text(ROCOGlossaryZeroDataBlurb, uLocalized('ROCOGlossaryZeroDataBlurbText'));
 		});
 
+		it('localizes ROCOGlossaryAppsLink', function () {
+			browser.assert.text(ROCOGlossaryAppsLink, uLocalized('ROCOGlossaryAppsLinkText'));
+		});
+
+		it('localizes ROCOGlossaryAppsBlurb', function() {
+			browser.assert.text(ROCOGlossaryAppsBlurb, uLocalized('ROCOGlossaryAppsBlurbText'));
+		});
+
 	});
 
 });

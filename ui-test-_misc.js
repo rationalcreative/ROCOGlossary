@@ -30,4 +30,16 @@ describe('ROCOGlossary_Misc', function () {
 	
 	});
 
+	describe('ROCOGlossaryAppsLink', function test_ROCOGlossaryAppsLink () {
+
+		it('sets href', function () {
+			browser.assert.attribute(ROCOGlossaryAppsLink, 'href', 'https://rosano.ca/apps');
+		});
+
+		it('sets target', function () {
+			browser.assert.attribute(ROCOGlossaryAppsLink, 'target', 	'_blank');
+		});
+	
+	});
+
 });
