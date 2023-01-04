@@ -30,6 +30,18 @@ describe('ROCOGlossary_Misc', function () {
 	
 	});
 
+	describe('ROCOGlossaryGoingWebLink', function test_ROCOGlossaryGoingWebLink () {
+
+		it('sets href', function () {
+			browser.assert.attribute(ROCOGlossaryGoingWebLink, 'href', 'https://rosano.hmm.garden/01fmeehzvr3n9q0rkrnf7y2d5c');
+		});
+
+		it('sets target', function () {
+			browser.assert.attribute(ROCOGlossaryGoingWebLink, 'target', 	'_blank');
+		});
+	
+	});
+
 	describe('ROCOGlossaryAppsLink', function test_ROCOGlossaryAppsLink () {
 
 		it('sets href', function () {

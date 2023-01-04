@@ -11,6 +11,9 @@ Object.entries({
 	ROCOGlossaryZeroDataLink: '.ROCOGlossaryZeroDataLink',
 	ROCOGlossaryZeroDataBlurb: '.ROCOGlossaryZeroDataBlurb',
 
+	ROCOGlossaryGoingWebLink: '.ROCOGlossaryGoingWebLink',
+	ROCOGlossaryGoingWebBlurb: '.ROCOGlossaryGoingWebBlurb',
+
 	ROCOGlossaryAppsLink: '.ROCOGlossaryAppsLink',
 	ROCOGlossaryAppsBlurb: '.ROCOGlossaryAppsBlurb',
 }).map(function (e) {
@@ -45,6 +48,14 @@ describe('ROCOGlossary_Access', function () {
 
 	it('shows ROCOGlossaryZeroDataBlurb', function () {
 		browser.assert.elements(ROCOGlossaryZeroDataBlurb, 1);
+	});
+
+	it('shows ROCOGlossaryGoingWebLink', function () {
+		browser.assert.elements(ROCOGlossaryGoingWebLink, 1);
+	});
+
+	it('shows ROCOGlossaryGoingWebBlurb', function () {
+		browser.assert.elements(ROCOGlossaryGoingWebBlurb, 1);
 	});
 
 	it('shows ROCOGlossaryAppsLink', function () {
