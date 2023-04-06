@@ -27,43 +27,43 @@ describe('ROCOGlossary_Access', function () {
 	});
 
 	it('shows ROCOGlossary', function () {
-		browser.assert.elements(ROCOGlossary, 1);
+		return browser.assert.elements(ROCOGlossary, 1);
 	});
 
 	it('hides ROCOGlossaryHeading', function () {
-		browser.assert.elements(ROCOGlossaryHeading, 0);
+		return browser.assert.elements(ROCOGlossaryHeading, 0);
 	});
 
 	it('shows ROCOGlossaryDoorlessLink', function () {
-		browser.assert.elements(ROCOGlossaryDoorlessLink, 1);
+		return browser.assert.elements(ROCOGlossaryDoorlessLink, 1);
 	});
 
 	it('shows ROCOGlossaryDoorlessBlurb', function () {
-		browser.assert.elements(ROCOGlossaryDoorlessBlurb, 1);
+		return browser.assert.elements(ROCOGlossaryDoorlessBlurb, 1);
 	});
 
 	it('shows ROCOGlossaryZeroDataLink', function () {
-		browser.assert.elements(ROCOGlossaryZeroDataLink, 1);
+		return browser.assert.elements(ROCOGlossaryZeroDataLink, 1);
 	});
 
 	it('shows ROCOGlossaryZeroDataBlurb', function () {
-		browser.assert.elements(ROCOGlossaryZeroDataBlurb, 1);
+		return browser.assert.elements(ROCOGlossaryZeroDataBlurb, 1);
 	});
 
 	it('shows ROCOGlossaryGoingWebLink', function () {
-		browser.assert.elements(ROCOGlossaryGoingWebLink, 1);
+		return browser.assert.elements(ROCOGlossaryGoingWebLink, 1);
 	});
 
 	it('shows ROCOGlossaryGoingWebBlurb', function () {
-		browser.assert.elements(ROCOGlossaryGoingWebBlurb, 1);
+		return browser.assert.elements(ROCOGlossaryGoingWebBlurb, 1);
 	});
 
 	it('shows ROCOGlossaryAppsLink', function () {
-		browser.assert.elements(ROCOGlossaryAppsLink, 1);
+		return browser.assert.elements(ROCOGlossaryAppsLink, 1);
 	});
 
 	it('shows ROCOGlossaryAppsBlurb', function () {
-		browser.assert.elements(ROCOGlossaryAppsBlurb, 1);
+		return browser.assert.elements(ROCOGlossaryAppsBlurb, 1);
 	});
 
 	context('ROCOGlossaryHeadingEnabled', function () {
@@ -75,7 +75,7 @@ describe('ROCOGlossary_Access', function () {
 		});
 
 		it('shows ROCOGlossaryHeading', function () {
-			browser.assert.elements(ROCOGlossaryHeading, 1);
+			return browser.assert.elements(ROCOGlossaryHeading, 1);
 		});
 	
 	});

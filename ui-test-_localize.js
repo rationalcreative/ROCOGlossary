@@ -16,39 +16,39 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		});
 
 		it('localizes ROCOGlossaryHeading', function () {
-			browser.assert.text(ROCOGlossaryHeading, uLocalized('ROCOGlossaryHeadingText'));
+			return browser.assert.text(ROCOGlossaryHeading, uLocalized('ROCOGlossaryHeadingText'));
 		});
 
 		it('localizes ROCOGlossaryDoorlessLink', function () {
-			browser.assert.text(ROCOGlossaryDoorlessLink, uLocalized('ROCOGlossaryDoorlessLinkText'));
+			return browser.assert.text(ROCOGlossaryDoorlessLink, uLocalized('ROCOGlossaryDoorlessLinkText'));
 		});
 
 		it('localizes ROCOGlossaryDoorlessBlurb', function() {
-			browser.assert.text(ROCOGlossaryDoorlessBlurb, uLocalized('ROCOGlossaryDoorlessBlurbText'));
+			return browser.assert.text(ROCOGlossaryDoorlessBlurb, uLocalized('ROCOGlossaryDoorlessBlurbText'));
 		});
 
 		it('localizes ROCOGlossaryZeroDataLink', function () {
-			browser.assert.text(ROCOGlossaryZeroDataLink, uLocalized('ROCOGlossaryZeroDataLinkText'));
+			return browser.assert.text(ROCOGlossaryZeroDataLink, uLocalized('ROCOGlossaryZeroDataLinkText'));
 		});
 
 		it('localizes ROCOGlossaryZeroDataBlurb', function() {
-			browser.assert.text(ROCOGlossaryZeroDataBlurb, uLocalized('ROCOGlossaryZeroDataBlurbText'));
+			return browser.assert.text(ROCOGlossaryZeroDataBlurb, uLocalized('ROCOGlossaryZeroDataBlurbText'));
 		});
 
 		it('localizes ROCOGlossaryGoingWebLink', function () {
-			browser.assert.text(ROCOGlossaryGoingWebLink, uLocalized('ROCOGlossaryGoingWebLinkText'));
+			return browser.assert.text(ROCOGlossaryGoingWebLink, uLocalized('ROCOGlossaryGoingWebLinkText'));
 		});
 
 		it('localizes ROCOGlossaryGoingWebBlurb', function() {
-			browser.assert.text(ROCOGlossaryGoingWebBlurb, uLocalized('ROCOGlossaryGoingWebBlurbText'));
+			return browser.assert.text(ROCOGlossaryGoingWebBlurb, uLocalized('ROCOGlossaryGoingWebBlurbText'));
 		});
 
 		it('localizes ROCOGlossaryAppsLink', function () {
-			browser.assert.text(ROCOGlossaryAppsLink, uLocalized('ROCOGlossaryAppsLinkText'));
+			return browser.assert.text(ROCOGlossaryAppsLink, uLocalized('ROCOGlossaryAppsLinkText'));
 		});
 
 		it('localizes ROCOGlossaryAppsBlurb', function() {
-			browser.assert.text(ROCOGlossaryAppsBlurb, uLocalized('ROCOGlossaryAppsBlurbText'));
+			return browser.assert.text(ROCOGlossaryAppsBlurb, uLocalized('ROCOGlossaryAppsBlurbText'));
 		});
 
 	});
